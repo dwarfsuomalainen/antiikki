@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "sass": "^1.62.1"
+  },
+  "name": "antikki",
+  "version": "1.0.0",
+  "description": "Kulkurin Antikki webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwarfsuomalainen/antikki.git"
+  },
+  "author": "RB ICT PALVELUT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dwarfsuomalainen/antikki/issues"
+  },
+  "homepage": "https://github.com/dwarfsuomalainen/antikki#readme"
+}
