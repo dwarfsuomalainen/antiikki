@@ -1,2 +1,67 @@
+* {
+  box-sizing: border-box; }
+
 body {
-  background: #F7FFD8; }
+  background: #FFDC40;
+  color: #10AEA6;
+  height: 100%;
+  margin: 0;
+  font-family: Corben;
+  height: 1.5; }
+  body#bg-img {
+    background: url("/dist/_images/_unoptimized/signal-2023-04-30-194652_005 (1).jpeg");
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(255, 220, 64, 0.5); }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 6rem; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(255, 222, 74, 0.5); }
+
+a {
+  color: #F7FFD8;
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+.text-secondary {
+  color: #F7FFD8; }
+
+main {
+  padding: 4rem;
+  height: 100%;
+  transition: all 0.5s ease-out; }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.4rem; }
+      main .icons a:hover {
+        color: #10AEA6;
+        transition: all 0.5s ease-out; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 20vh; }

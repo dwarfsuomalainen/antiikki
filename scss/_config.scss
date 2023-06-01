@@ -4,31 +4,34 @@ $secondary-color: #FFDC40;
 $third-color: #10AEA6;
 $fourth-color: #000000;
 $show-home-image: true;
-$home-image: url(../dist/_images/_unoptimized/signal-2023-04-30-194652_002.jpeg);
-$background-opacity: 0.8;
+$home-image: url("/dist/_images/_unoptimized/signal-2023-04-30-194652_005\ \(1\).jpeg");
+$background-opacity: 0.5
+;
 
 
 @mixin easeOut {
-    transition: all 0.5s ease-out;
-  }
-  
-  @mixin background {
-    @if $show-home-image {
-      &#bg-img {
-        background: $home-image;
-        background-attachment: fixed;
-        background-size: cover;
-  
-        &:after {
-          content: '';
-          position:fixed;
-          top: 0;
-          right: 0;
-          width: 100%;
-          height: 100%;
-          z-index: -1;
-          background: rgba($primary-color, $background-opacity);
-        }
+  transition: all 0.5s ease-out;
+}
+
+@mixin background {
+  @if $show-home-image {
+    &#bg-img {
+      background: $home-image;
+      background-attachment: fixed;
+      background-size: cover;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba($secondary-color, $background-opacity)
       }
+
+
     }
   }
+}
