@@ -63,7 +63,17 @@
         }
 
     }
+.about-info {
+    grid-template-areas:
 
+    'bioimage'
+    'bio' ;
+
+    grid-template-columns: 1fr;
+    .bio-image {
+        margin-bottom: 2rem;
+    }
+}
 }
 
 // smartphones display

@@ -35,7 +35,14 @@ $background-opacity: 0.5
     }
   }
 }
-
+//set text color
+@function set-text-color($color) {
+  @if (lightness($color)> 40) {
+    @return $third-color;
+  }@else{
+    @return $primary-color;
+  }
+}
 // media queries 
 
 @mixin mediaSm {
