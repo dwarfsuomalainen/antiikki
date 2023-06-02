@@ -1,0 +1,76 @@
+// wide display
+@include mediaXl {}
+
+// desktop display
+@include mediaLg {}
+
+// tablet display
+@include mediaMd {
+    main {
+        align-items: center;
+        text-align: center;
+
+        h1.lg-heading {
+            line-height: 1.5;
+            margin-bottom: 1rem;
+
+            font-size:3rem;
+        
+        }
+        h2.sm-heading {
+            padding: 0.2rem 0.4rem;
+        
+        }
+    }
+
+    div.menu-branding,
+    ul.menu-nav {
+        float: none;
+        width: 100%;
+        min-height: 0;
+
+        &.show {
+            transform: translate3d(0, 0, 0);
+
+
+        }
+    }
+
+    .menu-nav {
+        height: 75vh;
+        transform: translate3d(-100%, 0, 0);
+        font-size: 24px;
+    }
+
+    .menu-branding {
+        height: 25vh;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    .menu-btn.close {
+        .btn-line {
+            &:nth-child(1) {
+                background: $secondary-color;
+            }
+
+            &:nth-child(2) {
+                background: $secondary-color;
+            }
+
+            &:nth-child(3) {
+                background: $secondary-color;
+            }
+        }
+
+    }
+
+}
+
+// smartphones display
+@include mediaSm {
+
+    main#home h1 {
+        margin-top: 10vh;
+    }
+
+}
