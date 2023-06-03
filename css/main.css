@@ -96,7 +96,7 @@ body {
   font-family: Corben;
   height: 1.5; }
   body#bg-img {
-    background: url("/dist/_images/_unoptimized/signal-2023-04-30-194652_005 (1).jpeg");
+    background: url("../_images/_unoptimized/signal-2023-04-30-194652_005 (1).jpeg");
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
