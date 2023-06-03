@@ -96,6 +96,8 @@
     }
 
     .products {
+        grid-template-areas:
+        'productimage' ;
         grid-template-columns: 1fr;
     }
 
