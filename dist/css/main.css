@@ -139,7 +139,7 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh-30px);
+  min-height: calc(100vh-60px);
   transition: all 0.5s ease-out; }
   main .icons {
     margin-top: 1rem; }
@@ -206,8 +206,8 @@ main {
   padding: 1rem;
   background: #f6daa9;
   color: #665C84;
-  height: 30px;
-  font-size: 0.5rem; }
+  height: 60px;
+  font-size: 0.7rem; }
   #main-footer a {
     color: #665C84;
     transition: all 0.5s ease-out; }
