@@ -96,7 +96,7 @@ body {
   font-family: Corben;
   height: 1.5; }
   body#bg-img {
-    background: url("../images/main.png");
+    background: url("../images/main.jpg");
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
