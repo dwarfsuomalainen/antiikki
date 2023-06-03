@@ -96,7 +96,7 @@ body {
   font-family: Corben;
   height: 1.5; }
   body#bg-img {
-    background: url("/images/main.jpeg");
+    background: url("../images/main.jpeg");
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -112,7 +112,7 @@ body {
 h1,
 h2,
 h3 {
-  margin: 0;
+  margin-bottom: 1rem;
   font-weight: 400; }
   h1.lg-heading,
   h2.lg-heading,
@@ -231,6 +231,8 @@ main {
   background: #ffc574;
   padding: 1rem;
   border-bottom: #665C84 5px solid; }
+  .bio p {
+    margin-bottom: 3rem; }
 
 @media screen and (min-width: 1171px) {
   .products {
@@ -246,10 +248,13 @@ main {
     text-align: center; }
     main h1.lg-heading {
       line-height: 1.5;
+      margin-top: 1.5rem;
       margin-bottom: 1rem;
       font-size: 3rem; }
     main h2.sm-heading {
       padding: 0.2rem 0.4rem; }
+    main p {
+      margin-bottom: 1rem; }
   div.menu-branding,
   ul.menu-nav {
     float: none;
@@ -282,8 +287,11 @@ main {
     grid-template-columns: repeat(2, 1f); } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
+  main#home
+h1.lg-headings {
     margin-top: 10vh; }
+  .bio p {
+    margin-bottom: 1rem; }
   .products {
     grid-template-areas: 'productimage';
     grid-template-columns: 1fr; } }

@@ -1,12 +1,16 @@
 // wide display
-@include mediaXl {.products {
-    grid-template-columns: repeat(4,1fr);
-}}
+@include mediaXl {
+    .products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 
 // desktop display
-@include mediaLg {.products {
-    grid-template-columns: repeat(3,1fr);
-}}
+@include mediaLg {
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 // tablet display
 @include mediaMd {
@@ -16,13 +20,20 @@
 
         h1.lg-heading {
             line-height: 1.5;
+            margin-top: 1.5rem;
             margin-bottom: 1rem;
 
-            font-size:3rem;
-        
+            font-size: 3rem;
+
         }
+
         h2.sm-heading {
             padding: 0.2rem 0.4rem;
+
+        }
+
+        p {
+            margin-bottom: 1rem;
         
         }
     }
@@ -67,37 +78,44 @@
         }
 
     }
-.about-info {
-    grid-template-areas:
 
-    'bioimage'
-    'bio' ;
+    .about-info {
+        grid-template-areas:
 
-    grid-template-columns: 1fr;
-    .bio-image {
-        margin-bottom: 2rem;
+            'bioimage'
+            'bio';
+
+        grid-template-columns: 1fr;
+
+        .bio-image {
+            margin-bottom: 2rem;
+        }
     }
-}
-.products {
-    
-    grid-template-areas:
-    'productimage productimage' ;
-    grid-gap: 0.7rem;
-    grid-template-columns: repeat(2,1f);
 
-}
+    .products {
+
+        grid-template-areas:
+            'productimage productimage';
+        grid-gap: 0.7rem;
+        grid-template-columns: repeat(2, 1f);
+
+    }
 }
 
 // smartphones display
 @include mediaSm {
 
-    main#home h1 {
+    main#home 
+    h1.lg-headings {
         margin-top: 10vh;
     }
-
+    .bio p {
+        margin-bottom: 1rem;
+    
+    }
     .products {
         grid-template-areas:
-        'productimage' ;
+            'productimage';
         grid-template-columns: 1fr;
     }
 

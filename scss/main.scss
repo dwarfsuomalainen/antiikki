@@ -28,7 +28,8 @@ body {
 h1,
 h2,
 h3 {
-    margin: 0;
+    // margin-top: 1rem;
+    margin-bottom: 1rem;
     font-weight: 400;
 
     &.lg-heading {
@@ -206,7 +207,10 @@ main {
     background: lighten($secondary-color, $amount: 5);
     padding: 1rem;
     border-bottom: $third-color 5px solid;
-
+    p {
+        margin-bottom: 3rem;
+    
+    }
 
 }
 
