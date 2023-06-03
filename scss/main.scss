@@ -107,7 +107,8 @@ main {
         color: set-text-color($fourth-color);
         
       }}
-    div {
+    a { color: $third-color;}
+      div {
         font-size: 1rem;
         border: 3px $fourth-color solid;
         margin-bottom: 3rem;
