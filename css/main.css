@@ -170,6 +170,8 @@ main {
       .boxes .contact-item-p:hover img {
         border: #FF7657 3px solid;
         transition: all 0.5s ease-out; }
+  .boxes a {
+    color: #665C84; }
   .boxes div {
     font-size: 1rem;
     border: 3px #FF7657 solid;
