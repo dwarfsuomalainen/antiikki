@@ -36,7 +36,7 @@ h3 {
     }
 
     &.sm-heading {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         padding: 0.2rem 1rem;
 
         background: rgba(lighten($secondary-color, 2), 0.5);
@@ -115,14 +115,17 @@ main {
         @include easeOut;
 
         &:hover {
-          padding: 0.5rem 1.5rem;  
-          background: $primary-color;
-          color: set-text-color($fourth-color);
+        //   padding: 0.5rem 1.5rem;  
+        //   background: $primary-color;
+        //   color: set-text-color($fourth-color);
           
-          span{
-            color: set-text-color($fourth-color);
+        //   span{
+        //     color: set-text-color($fourth-color);
+        transition: all 0.3s ease-in-out;
+        transform: perspective(1000px) rotateY(-10deg);
+        box-shadow: -15px 5px 50px rgba(0, 0, 0, .3);
           }
-        }
+        //}
 
 
     }
@@ -142,15 +145,23 @@ main {
         border: 4px $primary-color solid;
 
         &:hover {
-            opacity: 0.5;
+            //opacity: 0.5;
             border-color: $third-color;
             @include easeOut;
+            transform: translateY(-20px);
+            
+            transition: all 0.3s ease-in-out;
+            transform: perspective(1000px) rotateY(-10deg);
+            box-shadow: -15px 5px 50px rgba(0, 0, 0, .3);
         }
 
 
     }
     .productimage {
         grid-area: productimage;
+        &:hover {
+            background-size: 109%;
+        }
     }
 }
 

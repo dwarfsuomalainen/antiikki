@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "node-sass": "^9.0.0",
     "sass": "^1.62.1"
   },
@@ -21,5 +22,5 @@
   "bugs": {
     "url": "https://github.com/dwarfsuomalainen/antikki/issues"
   },
-  "homepage": "https://github.com/dwarfsuomalainen/antikki#readme"
+  "homepage": "https://github.com/dwarfsuomalainen/antikki"
 }
