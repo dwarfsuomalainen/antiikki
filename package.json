@@ -4,7 +4,7 @@
     "node-sass": "^9.0.0",
     "sass": "^1.62.1"
   },
-  "name": "kulrurinantiikki",
+  "name": "kulkurinantiikki",
   "version": "1.0.0",
   "description": "Kulkurin Antiikki webpage",
   "main": "index.js",
